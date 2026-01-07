@@ -1,8 +1,0 @@
-
-Navigating to: https://tronstag.x0pa.ai/
-Assert: arrayContains → navBarOptions
-Assert: arrayContains → navBarOptions
-Action: click → jobsNavBar → null
-Action: click → createNewJob → null
-Action: click → startNewJobForm → null
-Assert: text → formHeading
