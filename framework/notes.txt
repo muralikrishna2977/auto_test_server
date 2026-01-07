@@ -1,0 +1,36 @@
+(1)
+types of actions
+1. click                      Clicks a UI element such as a button, link, menu item etc
+2. input                      Typing email, password, job title, min experience, max salary etc
+6. upload                     Uploads one or multiple files (Array of files)
+7. autocomplete               Handles searchable dropdowns
+8. toggleState                Toggles ON/OFF UI switches
+9. date                       Fills date fields
+10. checkbox                  Checks or unchecks checkbox
+11. multiSelectCreate         Handles multi-select dropdown with create-new option
+12. editor                    Types into rich text editors
+
+(2)
+types of asserts
+1. arrayContains             Used when a locator returns multiple text items, and we must verify one expected value is present
+2. contains                  Validates that the element’s text contains the expected substring
+3. text                      Validates that the element’s text exactly matches the expected value
+
+(3)
+configure main.json to run the required testcases.
+
+(4)
+how to run test cases
+npx playwright test --project chromium --headed --debug
+
+(5)
+open report
+allure open reports/allure/t_to_t_data_passing-2025-11-30_18-32-00
+
+(6)
+Working PlaceHolders
+{SCN-JOBCREATION-2.jobId || 683241}
+{SCN-JOBCREATION-2.jobId}
+{TC-003.SCN-JOBCREATION-2.jobId}
+{TC-003.SCN-JOBCREATION-2.jobId || 683241}
+

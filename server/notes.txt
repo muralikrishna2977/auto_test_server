@@ -1,0 +1,2 @@
+runtimewriter done,
+when testcases extracted in runpipeline testcase_id, insted of id in json file (so may need to change the framework a bit)

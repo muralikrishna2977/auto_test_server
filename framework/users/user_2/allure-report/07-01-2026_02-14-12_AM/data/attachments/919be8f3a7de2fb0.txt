@@ -1,0 +1,46 @@
+
+Navigating to: https://tronstag.x0pa.ai/
+Assert: arrayContains → navBarOptions
+Assert: arrayContains → navBarOptions
+Action: click → jobsNavBar → null
+Action: click → createNewJob → null
+Action: click → startNewJobForm → null
+Action: autocomplete → companyName → amazon
+
+=== Autocomplete Debug Start ===
+Input value: amazon
+Waiting for dropdown options...
+items: [ 'AMAZON' ]
+cleaned: [ 'AMAZON' ]
+exactMatch: AMAZON
+strictPattern: /^\s*AMAZON\s*$/i
+exactLocator count: 1
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → linkedInCompanyPage → tech mahindra ltd
+
+=== Autocomplete Debug Start ===
+Input value: tech mahindra ltd
+Waiting for dropdown options...
+items: [ 'tech mahindra ltd' ]
+cleaned: [ 'tech mahindra ltd' ]
+exactMatch: tech mahindra ltd
+strictPattern: /^\s*tech mahindra ltd\s*$/i
+exactLocator count: 1
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → companyName → accenture
+
+=== Autocomplete Debug Start ===
+Input value: accenture
+Waiting for dropdown options...
+items: [ 'Accenture', 'accenture hyd' ]
+cleaned: [ 'Accenture', 'accenture hyd' ]
+exactMatch: Accenture
+strictPattern: /^\s*Accenture\s*$/i
+exactLocator count: 1
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "filling all job fields and submit",
+    "tags": [
+      "a",
+      "b",
+      "c"
+    ],
+    "scenarios": [
+      "sc1"
+    ],
+    "testcase_id": "tc1"
+  }
+]

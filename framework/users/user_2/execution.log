@@ -1,0 +1,1283 @@
+
+Cleaned Allure results at: users/user_2/allure-results
+
+Loading Pages from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-ui-17\server\runtime\user_2\pages.json
+Loading Scenarios from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-ui-17\server\runtime\user_2\scenarios.json
+Loaded scenario count: 1
+Loading Testcases from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-ui-17\server\runtime\user_2\testcases.json
+Loaded testcase count: 1
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-ui-17\server\runtime\user_2\run.json
+Loading testdata from:  C:\Users\MuraliBandaru\Desktop\XOPA-automation-ui-17\server\runtime\user_2\testdata.json
+
+Running 1 test using 1 worker
+
+Loading Pages from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-ui-17\server\runtime\user_2\pages.json
+Loading Scenarios from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-ui-17\server\runtime\user_2\scenarios.json
+Loaded scenario count: [33m1[39m
+Loading Testcases from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-ui-17\server\runtime\user_2\testcases.json
+Loaded testcase count: [33m1[39m
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-ui-17\server\runtime\user_2\run.json
+Loading testdata from:  C:\Users\MuraliBandaru\Desktop\XOPA-automation-ui-17\server\runtime\user_2\testdata.json
+
+Navigating to: https://tronstag.x0pa.ai/
+Assert: arrayContains → navBarOptions
+Assert: arrayContains → navBarOptions
+Action: click → jobsNavBar → null
+Action: click → createNewJob → null
+Action: click → startNewJobForm → null
+Action: autocomplete → companyName → amazon
+
+=== Autocomplete Debug Start ===
+Input value: amazon
+Waiting for dropdown options...
+items: [ [32m'AMAZON'[39m ]
+cleaned: [ [32m'AMAZON'[39m ]
+exactMatch: AMAZON
+strictPattern: [31m/^\s*AMAZON\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → linkedInCompanyPage → tech mahindra ltd
+
+=== Autocomplete Debug Start ===
+Input value: tech mahindra ltd
+Waiting for dropdown options...
+items: [ [32m'tech mahindra ltd'[39m ]
+cleaned: [ [32m'tech mahindra ltd'[39m ]
+exactMatch: tech mahindra ltd
+strictPattern: [31m/^\s*tech mahindra ltd\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → companyName → accenture
+
+=== Autocomplete Debug Start ===
+Input value: accenture
+Waiting for dropdown options...
+items: [ [32m'Accenture'[39m, [32m'accenture hyd'[39m ]
+cleaned: [ [32m'Accenture'[39m, [32m'accenture hyd'[39m ]
+exactMatch: Accenture
+strictPattern: [31m/^\s*Accenture\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+  ✓  1 [chromium] › tests\metaRunner.spec.js:54:9 › Metadata Driven Framework (Runtime Mode) › b testcase1  (Id: btc1) (24.5s)
+
+========== [Allure Report Generation Started] ==========
+
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-ui-17\server\runtime\user_2\run.json
+[INFO] Loaded runJson: {
+  testcaseCount: 1,
+  scenarioCount: 1,
+  pageCount: 2,
+  runMode: 'serial',
+  reportName: '07-01-2026_02-14-12_AM',
+  createdAt: '2026-01-06T20:44:13.022Z',
+  url: 'https://tronstag.x0pa.ai/',
+  email: 'murali@x0pa.com',
+  password: 'x0pa@123#',
+  userId: 2
+}
+[INFO] Resolved userId: 2
+[INFO] Resolved reportName: 07-01-2026_02-14-12_AM
+[INFO] Allure results directory: users/user_2/allure-results
+[INFO] Framework user directory: C:\Users\MuraliBandaru\Desktop\XOPA-automation-ui-17\framework\users\user_2
+[INFO] Final Allure report output directory: C:\Users\MuraliBandaru\Desktop\XOPA-automation-ui-17\framework\users\user_2\allure-report\07-01-2026_02-14-12_AM
+[SUCCESS] Output directory ensured.
+[INFO] Allure CLI command path: "C:\Users\MuraliBandaru\AppData\Roaming\npm\allure.cmd"
+[INFO] Executing Allure command:
+        "C:\Users\MuraliBandaru\AppData\Roaming\npm\allure.cmd" generate "users/user_2/allure-results" --clean -o "C:\Users\MuraliBandaru\Desktop\XOPA-automation-ui-17\framework\users\user_2\allure-report\07-01-2026_02-14-12_AM"
+Report successfully generated to C:\Users\MuraliBandaru\Desktop\XOPA-automation-ui-17\framework\users\user_2\allure-report\07-01-2026_02-14-12_AM
+
+[SUCCESS] Allure report generated successfully.
+
+========== [Allure Report Ready for User 2] ==========
+
+
+  1 passed (1.4m)
+
+Cleaned Allure results at: users/user_2/allure-results
+
+Loading Pages from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\pages.json
+Loading Scenarios from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\scenarios.json
+Loaded scenario count: 3
+Loading Testcases from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testcases.json
+Loaded testcase count: 1
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\run.json
+Loading testdata from:  C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testdata.json
+
+Running 1 test using 1 worker
+
+Loading Pages from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\pages.json
+Loading Scenarios from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\scenarios.json
+Loaded scenario count: [33m3[39m
+Loading Testcases from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testcases.json
+Loaded testcase count: [33m1[39m
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\run.json
+Loading testdata from:  C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testdata.json
+
+Navigating to: https://tronstag.x0pa.ai/
+Assert: arrayContains → navBarOptions
+Assert: arrayContains → navBarOptions
+Action: click → jobsNavBar → null
+Action: click → createNewJob → null
+Action: click → startNewJobForm → null
+Assert: text → formHeading
+  ✘  1 [chromium] › tests\metaRunner.spec.js:69:9 › Metadata Driven Framework (Runtime Mode) › job creation and click on perticular jobid  (Id: btc1) (8.4s)
+
+========== [Allure Report Generation Started] ==========
+
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\run.json
+[INFO] Loaded runJson: {
+  testcaseCount: 1,
+  scenarioCount: 3,
+  pageCount: 3,
+  runMode: 'serial',
+  reportName: '07-01-2026_01-34-49_PM',
+  createdAt: '2026-01-07T08:04:49.579Z',
+  url: 'https://tronstag.x0pa.ai/',
+  email: 'murali@x0pa.com',
+  password: 'x0pa@123#',
+  userId: 2
+}
+[INFO] Resolved userId: 2
+[INFO] Resolved reportName: 07-01-2026_01-34-49_PM
+[INFO] Allure results directory: users/user_2/allure-results
+[INFO] Framework user directory: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2
+[INFO] Final Allure report output directory: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2\allure-report\07-01-2026_01-34-49_PM
+[SUCCESS] Output directory ensured.
+[INFO] Allure CLI command path: "C:\Users\MuraliBandaru\AppData\Roaming\npm\allure.cmd"
+[INFO] Executing Allure command:
+        "C:\Users\MuraliBandaru\AppData\Roaming\npm\allure.cmd" generate "users/user_2/allure-results" --clean -o "C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2\allure-report\07-01-2026_01-34-49_PM"
+Report successfully generated to C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2\allure-report\07-01-2026_01-34-49_PM
+
+[SUCCESS] Allure report generated successfully.
+
+========== [Allure Report Ready for User 2] ==========
+
+
+
+  1) [chromium] › tests\metaRunner.spec.js:69:9 › Metadata Driven Framework (Runtime Mode) › job creation and click on perticular jobid  (Id: btc1) 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Locator:  locator('//h5[@class=\'text-uppercase mt-2\']')
+    Expected: [32m"[7mc[27mreate a job posting"[39m
+    Received: [31m"[7mC[27mreate a job posting"[39m
+    Timeout:  5000ms
+
+    Call log:
+    [2m  - Expect "toHaveText" with timeout 5000ms[22m
+    [2m  - waiting for locator('//h5[@class=\'text-uppercase mt-2\']')[22m
+    [2m    8 × locator resolved to <h5 class="text-uppercase mt-2">…</h5>[22m
+    [2m      - unexpected value "Create a job posting"[22m
+
+
+       at ..\utils\metaEngine.js:319
+
+      317 |
+      318 |       case "text":
+    > 319 |         await expect(locator).toHaveText(expected);
+          |                               ^
+      320 |         break;
+      321 |
+      322 |       case "contains":
+        at MetaEngine.performAssert (C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\utils\metaEngine.js:319:31)
+        at MetaEngine.runScenario (C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\utils\metaEngine.js:443:9)
+        at C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\tests\metaRunner.spec.js:125:11
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    users\user_2\test-results\metaRunner-Metadata-Driven-d0774-n-perticular-jobid-Id-btc1--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: users\user_2\test-results\metaRunner-Metadata-Driven-d0774-n-perticular-jobid-Id-btc1--chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    users\user_2\test-results\metaRunner-Metadata-Driven-d0774-n-perticular-jobid-Id-btc1--chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace users\user_2\test-results\metaRunner-Metadata-Driven-d0774-n-perticular-jobid-Id-btc1--chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › tests\metaRunner.spec.js:69:9 › Metadata Driven Framework (Runtime Mode) › job creation and click on perticular jobid  (Id: btc1) 
+
+Cleaned Allure results at: users/user_2/allure-results
+
+Loading Pages from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\pages.json
+Loading Scenarios from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\scenarios.json
+Loaded scenario count: 3
+Loading Testcases from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testcases.json
+Loaded testcase count: 1
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\run.json
+Loading testdata from:  C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testdata.json
+
+Running 1 test using 1 worker
+
+Loading Pages from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\pages.json
+Loading Scenarios from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\scenarios.json
+Loaded scenario count: [33m3[39m
+Loading Testcases from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testcases.json
+Loaded testcase count: [33m1[39m
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\run.json
+Loading testdata from:  C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testdata.json
+
+Navigating to: https://tronstag.x0pa.ai/
+Assert: arrayContains → navBarOptions
+Assert: arrayContains → navBarOptions
+Action: click → jobsNavBar → null
+
+Cleaned Allure results at: users/user_2/allure-results
+
+Loading Pages from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\pages.json
+Loading Scenarios from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\scenarios.json
+Loaded scenario count: 3
+Loading Testcases from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testcases.json
+Loaded testcase count: 1
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\run.json
+Loading testdata from:  C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testdata.json
+
+Running 1 test using 1 worker
+
+Loading Pages from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\pages.json
+Loading Scenarios from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\scenarios.json
+Loaded scenario count: [33m3[39m
+Loading Testcases from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testcases.json
+Loaded testcase count: [33m1[39m
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\run.json
+Loading testdata from:  C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testdata.json
+
+Navigating to: https://tronstag.x0pa.ai/
+Assert: arrayContains → navBarOptions
+Assert: arrayContains → navBarOptions
+Action: click → jobsNavBar → null
+Action: click → createNewJob → null
+Action: click → startNewJobForm → null
+Assert: text → formHeading
+Action: upload → jobDescriptionPDF → Job Discription.pdf
+Action: autocomplete → companyName → Accenture
+
+=== Autocomplete Debug Start ===
+Input value: Accenture
+Waiting for dropdown options...
+items: [ [32m'Accenture'[39m, [32m'accenture hyd'[39m ]
+cleaned: [ [32m'Accenture'[39m, [32m'accenture hyd'[39m ]
+exactMatch: Accenture
+strictPattern: [31m/^\s*Accenture\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → linkedInCompanyPage → societe genral
+
+=== Autocomplete Debug Start ===
+Input value: societe genral
+Waiting for dropdown options...
+items: [ [32m'societe genral'[39m ]
+cleaned: [ [32m'societe genral'[39m ]
+exactMatch: societe genral
+strictPattern: [31m/^\s*societe genral\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: input → jobTitle → Android Developer
+Action: toggleState → jobVisibilityToggle → public
+Action: toggleState → ownerNameVisibilityToggle → no
+Action: toggleState → acceptApplicantsOtherCountriesToggle → no
+Action: toggleState → jobConfidentialToggle → yes
+Action: autocomplete → jobStatus → Campus Hiring
+
+=== Autocomplete Debug Start ===
+Input value: Campus Hiring
+Waiting for dropdown options...
+items: [ [32m'Campus Hiring'[39m ]
+cleaned: [ [32m'Campus Hiring'[39m ]
+exactMatch: Campus Hiring
+strictPattern: [31m/^\s*Campus Hiring\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: toggleState → requireJobApprovalsToggle → yes
+Action: autocomplete → hiringManager → Aaron Eckerly (aaron@efficientoffice.com)
+
+=== Autocomplete Debug Start ===
+Input value: Aaron Eckerly (aaron@efficientoffice.com)
+Waiting for dropdown options...
+items: [ [32m'Aaron Eckerly (aaron@efficientoffice.com)'[39m ]
+cleaned: [ [32m'Aaron Eckerly (aaron@efficientoffice.com)'[39m ]
+exactMatch: Aaron Eckerly (aaron@efficientoffice.com)
+strictPattern: [31m/^\s*Aaron Eckerly \(aaron@efficientoffice\.com\)\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → reportingOfficer → Ashley Adams (aadams@efficientoffice.com)
+
+=== Autocomplete Debug Start ===
+Input value: Ashley Adams (aadams@efficientoffice.com)
+Waiting for dropdown options...
+items: [ [32m'Ashley Adams (aadams@efficientoffice.com)'[39m ]
+cleaned: [ [32m'Ashley Adams (aadams@efficientoffice.com)'[39m ]
+exactMatch: Ashley Adams (aadams@efficientoffice.com)
+strictPattern: [31m/^\s*Ashley Adams \(aadams@efficientoffice\.com\)\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → country → India
+
+=== Autocomplete Debug Start ===
+Input value: India
+Waiting for dropdown options...
+items: [ [32m'British Indian Ocean Territory'[39m, [32m'India'[39m ]
+cleaned: [ [32m'British Indian Ocean Territory'[39m, [32m'India'[39m ]
+exactMatch: India
+strictPattern: [31m/^\s*India\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → city → Hyderabad
+
+=== Autocomplete Debug Start ===
+Input value: Hyderabad
+Waiting for dropdown options...
+items: [ [32m'Hyderabad / Secunderabad'[39m, [32m'Create "Hyderabad"'[39m ]
+cleaned: [ [32m'Hyderabad / Secunderabad'[39m, [32m'Create "Hyderabad"'[39m ]
+exactMatch: [90mundefined[39m
+No exact match. Total options: [33m2[39m
+Clicking first option as fallback...
+=== Autocomplete Debug End (fallback) ===
+
+Action: autocomplete → minQualification → Bachelor's Degree
+
+=== Autocomplete Debug Start ===
+Input value: Bachelor's Degree
+Waiting for dropdown options...
+items: [ [32m"Bachelor's Degree"[39m ]
+cleaned: [ [32m"Bachelor's Degree"[39m ]
+exactMatch: Bachelor's Degree
+strictPattern: [31m/^\s*Bachelor's Degree\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: input → minExperience → 5
+Action: input → maxExperience → 8
+Action: autocomplete → currency → United Arab Emirates Dirham
+
+=== Autocomplete Debug Start ===
+Input value: United Arab Emirates Dirham
+Waiting for dropdown options...
+items: [ [32m'United Arab Emirates Dirham'[39m ]
+cleaned: [ [32m'United Arab Emirates Dirham'[39m ]
+exactMatch: United Arab Emirates Dirham
+strictPattern: [31m/^\s*United Arab Emirates Dirham\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: input → minSalary → 100000
+Action: input → maxSalary → 500000
+Action: autocomplete → salaryRangeType → Base
+
+=== Autocomplete Debug Start ===
+Input value: Base
+Waiting for dropdown options...
+items: [ [32m'Base'[39m ]
+cleaned: [ [32m'Base'[39m ]
+exactMatch: Base
+strictPattern: [31m/^\s*Base\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → jobType → Temporary
+
+=== Autocomplete Debug Start ===
+Input value: Temporary
+Waiting for dropdown options...
+items: [ [32m'Temporary'[39m ]
+cleaned: [ [32m'Temporary'[39m ]
+exactMatch: Temporary
+strictPattern: [31m/^\s*Temporary\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → employmentType → Full-Time
+
+=== Autocomplete Debug Start ===
+Input value: Full-Time
+Waiting for dropdown options...
+items: [ [32m'Full-Time'[39m ]
+cleaned: [ [32m'Full-Time'[39m ]
+exactMatch: Full-Time
+strictPattern: [31m/^\s*Full-Time\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: input → noOfVacancies → 11
+Action: checkbox → keepJobOpenForever → check
+Action: multiSelectCreate → skills → kotlin,java,management
+Action: editor → jobDescription → Automate recruiter workflows with Playwright.
+Action: editor → jobRequirement → 1+ year Playwright, good JS, API basics.
+Action: autocomplete → personaBenchmarkEmployee → Alpha X (alpha@x0pa.com)
+
+=== Autocomplete Debug Start ===
+Input value: Alpha X (alpha@x0pa.com)
+Waiting for dropdown options...
+items: [ [32m'Alpha X (alpha@x0pa.com)'[39m ]
+cleaned: [ [32m'Alpha X (alpha@x0pa.com)'[39m ]
+exactMatch: Alpha X (alpha@x0pa.com)
+strictPattern: [31m/^\s*Alpha X \(alpha@x0pa\.com\)\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: upload → additionalAttachments → aditional atachments1.pdfaditional atachments2.pdf
+  ✘  1 [chromium] › tests\metaRunner.spec.js:69:9 › Metadata Driven Framework (Runtime Mode) › job creation and click on perticular jobid  (Id: btc1) (1.1m)
+
+========== [Allure Report Generation Started] ==========
+
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\run.json
+[INFO] Loaded runJson: {
+  testcaseCount: 1,
+  scenarioCount: 3,
+  pageCount: 3,
+  runMode: 'serial',
+  reportName: '07-01-2026_01-38-50_PM',
+  createdAt: '2026-01-07T08:08:50.843Z',
+  url: 'https://tronstag.x0pa.ai/',
+  email: 'murali@x0pa.com',
+  password: 'x0pa@123#',
+  userId: 2
+}
+[INFO] Resolved userId: 2
+[INFO] Resolved reportName: 07-01-2026_01-38-50_PM
+[INFO] Allure results directory: users/user_2/allure-results
+[INFO] Framework user directory: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2
+[INFO] Final Allure report output directory: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2\allure-report\07-01-2026_01-38-50_PM
+[SUCCESS] Output directory ensured.
+[INFO] Allure CLI command path: "C:\Users\MuraliBandaru\AppData\Roaming\npm\allure.cmd"
+[INFO] Executing Allure command:
+        "C:\Users\MuraliBandaru\AppData\Roaming\npm\allure.cmd" generate "users/user_2/allure-results" --clean -o "C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2\allure-report\07-01-2026_01-38-50_PM"
+Report successfully generated to C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2\allure-report\07-01-2026_01-38-50_PM
+
+[SUCCESS] Allure report generated successfully.
+
+========== [Allure Report Ready for User 2] ==========
+
+
+
+  1) [chromium] › tests\metaRunner.spec.js:69:9 › Metadata Driven Framework (Runtime Mode) › job creation and click on perticular jobid  (Id: btc1) 
+
+    Error: ENOENT: no such file or directory, stat 'C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\uploadFiles\aditional atachments1.pdfaditional atachments2.pdf'
+
+       at ..\utils\metaEngine.js:74
+
+      72 |             path.join(uploadDir, fileName)
+      73 |           );
+    > 74 |           await locator.setInputFiles(resolved);
+         |           ^
+      75 |         } else {
+      76 |           await locator.setInputFiles(
+      77 |             path.join(uploadDir, data)
+        at MetaEngine.performAction (C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\utils\metaEngine.js:74:11)
+        at MetaEngine.runScenario (C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\utils\metaEngine.js:432:9)
+        at C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\tests\metaRunner.spec.js:125:11
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    users\user_2\test-results\metaRunner-Metadata-Driven-d0774-n-perticular-jobid-Id-btc1--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: users\user_2\test-results\metaRunner-Metadata-Driven-d0774-n-perticular-jobid-Id-btc1--chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    users\user_2\test-results\metaRunner-Metadata-Driven-d0774-n-perticular-jobid-Id-btc1--chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace users\user_2\test-results\metaRunner-Metadata-Driven-d0774-n-perticular-jobid-Id-btc1--chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › tests\metaRunner.spec.js:69:9 › Metadata Driven Framework (Runtime Mode) › job creation and click on perticular jobid  (Id: btc1) 
+
+Cleaned Allure results at: users/user_2/allure-results
+
+Loading Pages from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\pages.json
+Loading Scenarios from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\scenarios.json
+Loaded scenario count: 3
+Loading Testcases from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testcases.json
+Loaded testcase count: 1
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\run.json
+Loading testdata from:  C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testdata.json
+
+Running 1 test using 1 worker
+
+Loading Pages from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\pages.json
+Loading Scenarios from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\scenarios.json
+Loaded scenario count: [33m3[39m
+Loading Testcases from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testcases.json
+Loaded testcase count: [33m1[39m
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\run.json
+Loading testdata from:  C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testdata.json
+
+Navigating to: https://tronstag.x0pa.ai/
+Assert: arrayContains → navBarOptions
+Assert: arrayContains → navBarOptions
+Action: click → jobsNavBar → null
+Action: click → createNewJob → null
+Action: click → startNewJobForm → null
+Assert: text → formHeading
+Action: upload → jobDescriptionPDF → Job Discription.pdf
+Action: autocomplete → companyName → Accenture
+
+=== Autocomplete Debug Start ===
+Input value: Accenture
+Waiting for dropdown options...
+items: [ [32m'Accenture'[39m, [32m'accenture hyd'[39m ]
+cleaned: [ [32m'Accenture'[39m, [32m'accenture hyd'[39m ]
+exactMatch: Accenture
+strictPattern: [31m/^\s*Accenture\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → linkedInCompanyPage → societe genral
+
+=== Autocomplete Debug Start ===
+Input value: societe genral
+Waiting for dropdown options...
+items: [ [32m'societe genral'[39m ]
+cleaned: [ [32m'societe genral'[39m ]
+exactMatch: societe genral
+strictPattern: [31m/^\s*societe genral\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: input → jobTitle → Android Developer
+Action: toggleState → jobVisibilityToggle → public
+Action: toggleState → ownerNameVisibilityToggle → no
+Action: toggleState → acceptApplicantsOtherCountriesToggle → no
+Action: toggleState → jobConfidentialToggle → yes
+Action: autocomplete → jobStatus → Campus Hiring
+
+=== Autocomplete Debug Start ===
+Input value: Campus Hiring
+Waiting for dropdown options...
+items: [ [32m'Campus Hiring'[39m ]
+cleaned: [ [32m'Campus Hiring'[39m ]
+exactMatch: Campus Hiring
+strictPattern: [31m/^\s*Campus Hiring\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: toggleState → requireJobApprovalsToggle → yes
+Action: autocomplete → hiringManager → Aaron Eckerly (aaron@efficientoffice.com)
+
+=== Autocomplete Debug Start ===
+Input value: Aaron Eckerly (aaron@efficientoffice.com)
+Waiting for dropdown options...
+items: [ [32m'Aaron Eckerly (aaron@efficientoffice.com)'[39m ]
+cleaned: [ [32m'Aaron Eckerly (aaron@efficientoffice.com)'[39m ]
+exactMatch: Aaron Eckerly (aaron@efficientoffice.com)
+strictPattern: [31m/^\s*Aaron Eckerly \(aaron@efficientoffice\.com\)\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → reportingOfficer → Ashley Adams (aadams@efficientoffice.com)
+
+=== Autocomplete Debug Start ===
+Input value: Ashley Adams (aadams@efficientoffice.com)
+Waiting for dropdown options...
+items: [ [32m'Ashley Adams (aadams@efficientoffice.com)'[39m ]
+cleaned: [ [32m'Ashley Adams (aadams@efficientoffice.com)'[39m ]
+exactMatch: Ashley Adams (aadams@efficientoffice.com)
+strictPattern: [31m/^\s*Ashley Adams \(aadams@efficientoffice\.com\)\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → country → India
+
+=== Autocomplete Debug Start ===
+Input value: India
+Waiting for dropdown options...
+items: [ [32m'British Indian Ocean Territory'[39m, [32m'India'[39m ]
+cleaned: [ [32m'British Indian Ocean Territory'[39m, [32m'India'[39m ]
+exactMatch: India
+strictPattern: [31m/^\s*India\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → city → Hyderabad
+
+=== Autocomplete Debug Start ===
+Input value: Hyderabad
+Waiting for dropdown options...
+items: [ [32m'Hyderabad / Secunderabad'[39m, [32m'Create "Hyderabad"'[39m ]
+cleaned: [ [32m'Hyderabad / Secunderabad'[39m, [32m'Create "Hyderabad"'[39m ]
+exactMatch: [90mundefined[39m
+No exact match. Total options: [33m2[39m
+Clicking first option as fallback...
+=== Autocomplete Debug End (fallback) ===
+
+Action: autocomplete → minQualification → Bachelor's Degree
+
+=== Autocomplete Debug Start ===
+Input value: Bachelor's Degree
+Waiting for dropdown options...
+items: [ [32m"Bachelor's Degree"[39m ]
+cleaned: [ [32m"Bachelor's Degree"[39m ]
+exactMatch: Bachelor's Degree
+strictPattern: [31m/^\s*Bachelor's Degree\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: input → minExperience → 5
+Action: input → maxExperience → 8
+Action: autocomplete → currency → United Arab Emirates Dirham
+
+=== Autocomplete Debug Start ===
+Input value: United Arab Emirates Dirham
+Waiting for dropdown options...
+items: [ [32m'United Arab Emirates Dirham'[39m ]
+cleaned: [ [32m'United Arab Emirates Dirham'[39m ]
+exactMatch: United Arab Emirates Dirham
+strictPattern: [31m/^\s*United Arab Emirates Dirham\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: input → minSalary → 100000
+Action: input → maxSalary → 500000
+Action: autocomplete → salaryRangeType → Base
+
+=== Autocomplete Debug Start ===
+Input value: Base
+Waiting for dropdown options...
+items: [ [32m'Base'[39m ]
+cleaned: [ [32m'Base'[39m ]
+exactMatch: Base
+strictPattern: [31m/^\s*Base\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → jobType → Temporary
+
+=== Autocomplete Debug Start ===
+Input value: Temporary
+Waiting for dropdown options...
+items: [ [32m'Temporary'[39m ]
+cleaned: [ [32m'Temporary'[39m ]
+exactMatch: Temporary
+strictPattern: [31m/^\s*Temporary\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → employmentType → Full-Time
+
+=== Autocomplete Debug Start ===
+Input value: Full-Time
+Waiting for dropdown options...
+items: [ [32m'Full-Time'[39m ]
+cleaned: [ [32m'Full-Time'[39m ]
+exactMatch: Full-Time
+strictPattern: [31m/^\s*Full-Time\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: input → noOfVacancies → 11
+Action: checkbox → keepJobOpenForever → check
+Action: multiSelectCreate → skills → kotlin,java,management
+Action: editor → jobDescription → Automate recruiter workflows with Playwright.
+Action: editor → jobRequirement → 1+ year Playwright, good JS, API basics.
+Action: autocomplete → personaBenchmarkEmployee → Alpha X (alpha@x0pa.com)
+
+=== Autocomplete Debug Start ===
+Input value: Alpha X (alpha@x0pa.com)
+Waiting for dropdown options...
+items: [ [32m'Alpha X (alpha@x0pa.com)'[39m ]
+cleaned: [ [32m'Alpha X (alpha@x0pa.com)'[39m ]
+exactMatch: Alpha X (alpha@x0pa.com)
+strictPattern: [31m/^\s*Alpha X \(alpha@x0pa\.com\)\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: upload → additionalAttachments → aditional atachments1.pdf,aditional atachments2.pdf
+Action: click → submitBtn → null
+Assert: text → jobCreatedSuccessfullyMessage
+Saving output → jobId via saveJobID
+Stored: btc1 → bsc2.jobId = 683806 for user with id 2
+Action: click → jobsNavBar → null
+Action: click → JobPostings → null
+Assert: text → JobPostingsHeading
+Action: clickPerticularJobTitle → JobTitle → 683806
+Total pages: 7
+Found Job ID 683806 on page 1, clicking...
+  ✓  1 [chromium] › tests\metaRunner.spec.js:69:9 › Metadata Driven Framework (Runtime Mode) › job creation and click on perticular jobid  (Id: btc1) (1.4m)
+
+========== [Allure Report Generation Started] ==========
+
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\run.json
+[INFO] Loaded runJson: {
+  testcaseCount: 1,
+  scenarioCount: 3,
+  pageCount: 3,
+  runMode: 'serial',
+  reportName: '07-01-2026_01-52-01_PM',
+  createdAt: '2026-01-07T08:22:01.919Z',
+  url: 'https://tronstag.x0pa.ai/',
+  email: 'murali@x0pa.com',
+  password: 'x0pa@123#',
+  userId: 2
+}
+[INFO] Resolved userId: 2
+[INFO] Resolved reportName: 07-01-2026_01-52-01_PM
+[INFO] Allure results directory: users/user_2/allure-results
+[INFO] Framework user directory: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2
+[INFO] Final Allure report output directory: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2\allure-report\07-01-2026_01-52-01_PM
+[SUCCESS] Output directory ensured.
+[INFO] Allure CLI command path: "C:\Users\MuraliBandaru\AppData\Roaming\npm\allure.cmd"
+[INFO] Executing Allure command:
+        "C:\Users\MuraliBandaru\AppData\Roaming\npm\allure.cmd" generate "users/user_2/allure-results" --clean -o "C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2\allure-report\07-01-2026_01-52-01_PM"
+Report successfully generated to C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2\allure-report\07-01-2026_01-52-01_PM
+
+[SUCCESS] Allure report generated successfully.
+
+========== [Allure Report Ready for User 2] ==========
+
+
+  1 passed (1.8m)
+
+Cleaned Allure results at: users/user_2/allure-results
+
+Loading Pages from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\pages.json
+Loading Scenarios from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\scenarios.json
+Loaded scenario count: 3
+Loading Testcases from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testcases.json
+Loaded testcase count: 1
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\run.json
+Loading testdata from:  C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testdata.json
+
+Running 1 test using 1 worker
+
+Loading Pages from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\pages.json
+Loading Scenarios from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\scenarios.json
+Loaded scenario count: [33m3[39m
+Loading Testcases from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testcases.json
+Loaded testcase count: [33m1[39m
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\run.json
+Loading testdata from:  C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testdata.json
+
+Navigating to: https://tronstag.x0pa.ai/
+Assert: arrayContains → navBarOptions
+Assert: arrayContains → navBarOptions
+Action: click → jobsNavBar → null
+Action: click → createNewJob → null
+Action: click → startNewJobForm → null
+Assert: text → formHeading
+Action: upload → jobDescriptionPDF → Job Discription.pdf
+Action: autocomplete → companyName → Accenture
+
+=== Autocomplete Debug Start ===
+Input value: Accenture
+Waiting for dropdown options...
+items: [ [32m'Accenture'[39m, [32m'accenture hyd'[39m ]
+cleaned: [ [32m'Accenture'[39m, [32m'accenture hyd'[39m ]
+exactMatch: Accenture
+strictPattern: [31m/^\s*Accenture\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → linkedInCompanyPage → societe genral
+
+=== Autocomplete Debug Start ===
+Input value: societe genral
+Waiting for dropdown options...
+items: [ [32m'societe genral'[39m ]
+cleaned: [ [32m'societe genral'[39m ]
+exactMatch: societe genral
+strictPattern: [31m/^\s*societe genral\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: input → jobTitle → Android Developer
+Action: toggleState → jobVisibilityToggle → public
+Action: toggleState → ownerNameVisibilityToggle → no
+Action: toggleState → acceptApplicantsOtherCountriesToggle → no
+Action: toggleState → jobConfidentialToggle → yes
+Action: autocomplete → jobStatus → Campus Hiring
+
+=== Autocomplete Debug Start ===
+Input value: Campus Hiring
+Waiting for dropdown options...
+items: [ [32m'Campus Hiring'[39m ]
+cleaned: [ [32m'Campus Hiring'[39m ]
+exactMatch: Campus Hiring
+strictPattern: [31m/^\s*Campus Hiring\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: toggleState → requireJobApprovalsToggle → yes
+Action: autocomplete → hiringManager → Aaron Eckerly (aaron@efficientoffice.com)
+
+=== Autocomplete Debug Start ===
+Input value: Aaron Eckerly (aaron@efficientoffice.com)
+Waiting for dropdown options...
+items: [ [32m'Aaron Eckerly (aaron@efficientoffice.com)'[39m ]
+cleaned: [ [32m'Aaron Eckerly (aaron@efficientoffice.com)'[39m ]
+exactMatch: Aaron Eckerly (aaron@efficientoffice.com)
+strictPattern: [31m/^\s*Aaron Eckerly \(aaron@efficientoffice\.com\)\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → reportingOfficer → Ashley Adams (aadams@efficientoffice.com)
+
+=== Autocomplete Debug Start ===
+Input value: Ashley Adams (aadams@efficientoffice.com)
+Waiting for dropdown options...
+items: [ [32m'Ashley Adams (aadams@efficientoffice.com)'[39m ]
+cleaned: [ [32m'Ashley Adams (aadams@efficientoffice.com)'[39m ]
+exactMatch: Ashley Adams (aadams@efficientoffice.com)
+strictPattern: [31m/^\s*Ashley Adams \(aadams@efficientoffice\.com\)\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → country → India
+
+=== Autocomplete Debug Start ===
+Input value: India
+Waiting for dropdown options...
+items: [ [32m'British Indian Ocean Territory'[39m, [32m'India'[39m ]
+cleaned: [ [32m'British Indian Ocean Territory'[39m, [32m'India'[39m ]
+exactMatch: India
+strictPattern: [31m/^\s*India\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → city → Hyderabad
+
+=== Autocomplete Debug Start ===
+Input value: Hyderabad
+Waiting for dropdown options...
+items: [ [32m'Hyderabad / Secunderabad'[39m, [32m'Create "Hyderabad"'[39m ]
+cleaned: [ [32m'Hyderabad / Secunderabad'[39m, [32m'Create "Hyderabad"'[39m ]
+exactMatch: [90mundefined[39m
+No exact match. Total options: [33m2[39m
+Clicking first option as fallback...
+=== Autocomplete Debug End (fallback) ===
+
+Action: autocomplete → minQualification → Bachelor's Degree
+
+=== Autocomplete Debug Start ===
+Input value: Bachelor's Degree
+Waiting for dropdown options...
+items: [ [32m"Bachelor's Degree"[39m ]
+cleaned: [ [32m"Bachelor's Degree"[39m ]
+exactMatch: Bachelor's Degree
+strictPattern: [31m/^\s*Bachelor's Degree\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: input → minExperience → 5
+Action: input → maxExperience → 8
+Action: autocomplete → currency → United Arab Emirates Dirham
+
+=== Autocomplete Debug Start ===
+Input value: United Arab Emirates Dirham
+Waiting for dropdown options...
+items: [ [32m'United Arab Emirates Dirham'[39m ]
+cleaned: [ [32m'United Arab Emirates Dirham'[39m ]
+exactMatch: United Arab Emirates Dirham
+strictPattern: [31m/^\s*United Arab Emirates Dirham\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: input → minSalary → 100000
+Action: input → maxSalary → 500000
+Action: autocomplete → salaryRangeType → Base
+
+=== Autocomplete Debug Start ===
+Input value: Base
+Waiting for dropdown options...
+items: [ [32m'Base'[39m ]
+cleaned: [ [32m'Base'[39m ]
+exactMatch: Base
+strictPattern: [31m/^\s*Base\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → jobType → Temporary
+
+=== Autocomplete Debug Start ===
+Input value: Temporary
+Waiting for dropdown options...
+items: [ [32m'Temporary'[39m ]
+cleaned: [ [32m'Temporary'[39m ]
+exactMatch: Temporary
+strictPattern: [31m/^\s*Temporary\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → employmentType → Full-Time
+
+=== Autocomplete Debug Start ===
+Input value: Full-Time
+Waiting for dropdown options...
+items: [ [32m'Full-Time'[39m ]
+cleaned: [ [32m'Full-Time'[39m ]
+exactMatch: Full-Time
+strictPattern: [31m/^\s*Full-Time\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: input → noOfVacancies → 11
+Action: checkbox → keepJobOpenForever → check
+Action: multiSelectCreate → skills → kotlin,java,management
+Action: editor → jobDescription → Automate recruiter workflows with Playwright.
+Action: editor → jobRequirement → 1+ year Playwright, good JS, API basics.
+Action: autocomplete → personaBenchmarkEmployee → Alpha X (alpha@x0pa.com)
+
+=== Autocomplete Debug Start ===
+Input value: Alpha X (alpha@x0pa.com)
+Waiting for dropdown options...
+items: [ [32m'Alpha X (alpha@x0pa.com)'[39m ]
+cleaned: [ [32m'Alpha X (alpha@x0pa.com)'[39m ]
+exactMatch: Alpha X (alpha@x0pa.com)
+strictPattern: [31m/^\s*Alpha X \(alpha@x0pa\.com\)\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: upload → additionalAttachments → aditional atachments1.pdf,aditional atachments2.pdf
+Action: click → submitBtn → null
+Assert: text → jobCreatedSuccessfullyMessage
+Saving output → jobId via saveJobID
+Stored: btc1 → bsc2.jobId = 683808 for user with id 2
+Action: click → jobsNavBar → null
+Action: click → JobPostings → null
+Assert: text → JobPostingsHeading
+Action: clickPerticularJobTitle → JobTitle → 683808
+Total pages: 7
+Found Job ID 683808 on page 1, clicking...
+  ✓  1 [chromium] › tests\metaRunner.spec.js:69:9 › Metadata Driven Framework (Runtime Mode) › job creation and click on perticular jobid  (Id: btc1) (1.3m)
+
+========== [Allure Report Generation Started] ==========
+
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\run.json
+[INFO] Loaded runJson: {
+  testcaseCount: 1,
+  scenarioCount: 3,
+  pageCount: 3,
+  runMode: 'serial',
+  reportName: '07-01-2026_02-25-36_PM',
+  createdAt: '2026-01-07T08:55:36.522Z',
+  url: 'https://tronstag.x0pa.ai/',
+  email: 'murali@x0pa.com',
+  password: 'x0pa@123#',
+  userId: 2
+}
+[INFO] Resolved userId: 2
+[INFO] Resolved reportName: 07-01-2026_02-25-36_PM
+[INFO] Allure results directory: users/user_2/allure-results
+[INFO] Framework user directory: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2
+[INFO] Final Allure report output directory: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2\allure-report\07-01-2026_02-25-36_PM
+[SUCCESS] Output directory ensured.
+[INFO] Allure CLI command path: "C:\Users\MuraliBandaru\AppData\Roaming\npm\allure.cmd"
+[INFO] Executing Allure command:
+        "C:\Users\MuraliBandaru\AppData\Roaming\npm\allure.cmd" generate "users/user_2/allure-results" --clean -o "C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2\allure-report\07-01-2026_02-25-36_PM"
+Report successfully generated to C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2\allure-report\07-01-2026_02-25-36_PM
+
+[SUCCESS] Allure report generated successfully.
+
+========== [Allure Report Ready for User 2] ==========
+
+
+  1 passed (1.7m)
+
+Cleaned Allure results at: users/user_2/allure-results
+
+Loading Pages from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\pages.json
+Loading Scenarios from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\scenarios.json
+Loaded scenario count: 3
+Loading Testcases from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testcases.json
+Loaded testcase count: 1
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\run.json
+Loading testdata from:  C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testdata.json
+
+Running 1 test using 1 worker
+
+Loading Pages from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\pages.json
+Loading Scenarios from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\scenarios.json
+Loaded scenario count: [33m3[39m
+Loading Testcases from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testcases.json
+Loaded testcase count: [33m1[39m
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\run.json
+Loading testdata from:  C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\testdata.json
+
+Navigating to: https://tronstag.x0pa.ai/
+Assert: arrayContains → navBarOptions
+Assert: arrayContains → navBarOptions
+Action: click → jobsNavBar → null
+Action: click → createNewJob → null
+Action: click → startNewJobForm → null
+Assert: text → formHeading
+Action: upload → jobDescriptionPDF → Job Discription.pdf
+Action: autocomplete → companyName → Accenture
+
+=== Autocomplete Debug Start ===
+Input value: Accenture
+Waiting for dropdown options...
+items: [ [32m'Accenture'[39m, [32m'accenture hyd'[39m ]
+cleaned: [ [32m'Accenture'[39m, [32m'accenture hyd'[39m ]
+exactMatch: Accenture
+strictPattern: [31m/^\s*Accenture\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → linkedInCompanyPage → societe genral
+
+=== Autocomplete Debug Start ===
+Input value: societe genral
+Waiting for dropdown options...
+items: [ [32m'societe genral'[39m ]
+cleaned: [ [32m'societe genral'[39m ]
+exactMatch: societe genral
+strictPattern: [31m/^\s*societe genral\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: input → jobTitle → Android Developer
+Action: toggleState → jobVisibilityToggle → public
+Action: toggleState → ownerNameVisibilityToggle → no
+Action: toggleState → acceptApplicantsOtherCountriesToggle → no
+Action: toggleState → jobConfidentialToggle → yes
+Action: autocomplete → jobStatus → Campus Hiring
+
+=== Autocomplete Debug Start ===
+Input value: Campus Hiring
+Waiting for dropdown options...
+items: [ [32m'Campus Hiring'[39m ]
+cleaned: [ [32m'Campus Hiring'[39m ]
+exactMatch: Campus Hiring
+strictPattern: [31m/^\s*Campus Hiring\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: toggleState → requireJobApprovalsToggle → yes
+Action: autocomplete → hiringManager → Aaron Eckerly (aaron@efficientoffice.com)
+
+=== Autocomplete Debug Start ===
+Input value: Aaron Eckerly (aaron@efficientoffice.com)
+Waiting for dropdown options...
+items: [ [32m'Aaron Eckerly (aaron@efficientoffice.com)'[39m ]
+cleaned: [ [32m'Aaron Eckerly (aaron@efficientoffice.com)'[39m ]
+exactMatch: Aaron Eckerly (aaron@efficientoffice.com)
+strictPattern: [31m/^\s*Aaron Eckerly \(aaron@efficientoffice\.com\)\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → reportingOfficer → Ashley Adams (aadams@efficientoffice.com)
+
+=== Autocomplete Debug Start ===
+Input value: Ashley Adams (aadams@efficientoffice.com)
+Waiting for dropdown options...
+items: [ [32m'Ashley Adams (aadams@efficientoffice.com)'[39m ]
+cleaned: [ [32m'Ashley Adams (aadams@efficientoffice.com)'[39m ]
+exactMatch: Ashley Adams (aadams@efficientoffice.com)
+strictPattern: [31m/^\s*Ashley Adams \(aadams@efficientoffice\.com\)\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → country → India
+
+=== Autocomplete Debug Start ===
+Input value: India
+Waiting for dropdown options...
+items: [ [32m'British Indian Ocean Territory'[39m, [32m'India'[39m ]
+cleaned: [ [32m'British Indian Ocean Territory'[39m, [32m'India'[39m ]
+exactMatch: India
+strictPattern: [31m/^\s*India\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → city → Hyderabad
+
+=== Autocomplete Debug Start ===
+Input value: Hyderabad
+Waiting for dropdown options...
+items: [ [32m'Hyderabad / Secunderabad'[39m, [32m'Create "Hyderabad"'[39m ]
+cleaned: [ [32m'Hyderabad / Secunderabad'[39m, [32m'Create "Hyderabad"'[39m ]
+exactMatch: [90mundefined[39m
+No exact match. Total options: [33m2[39m
+Clicking first option as fallback...
+=== Autocomplete Debug End (fallback) ===
+
+Action: autocomplete → minQualification → Bachelor's Degree
+
+=== Autocomplete Debug Start ===
+Input value: Bachelor's Degree
+Waiting for dropdown options...
+items: [ [32m"Bachelor's Degree"[39m ]
+cleaned: [ [32m"Bachelor's Degree"[39m ]
+exactMatch: Bachelor's Degree
+strictPattern: [31m/^\s*Bachelor's Degree\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: input → minExperience → 5
+Action: input → maxExperience → 8
+Action: autocomplete → currency → United Arab Emirates Dirham
+
+=== Autocomplete Debug Start ===
+Input value: United Arab Emirates Dirham
+Waiting for dropdown options...
+items: [ [32m'United Arab Emirates Dirham'[39m ]
+cleaned: [ [32m'United Arab Emirates Dirham'[39m ]
+exactMatch: United Arab Emirates Dirham
+strictPattern: [31m/^\s*United Arab Emirates Dirham\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: input → minSalary → 100000
+Action: input → maxSalary → 500000
+Action: autocomplete → salaryRangeType → Base
+
+=== Autocomplete Debug Start ===
+Input value: Base
+Waiting for dropdown options...
+items: [ [32m'Base'[39m ]
+cleaned: [ [32m'Base'[39m ]
+exactMatch: Base
+strictPattern: [31m/^\s*Base\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → jobType → Temporary
+
+=== Autocomplete Debug Start ===
+Input value: Temporary
+Waiting for dropdown options...
+items: [ [32m'Temporary'[39m ]
+cleaned: [ [32m'Temporary'[39m ]
+exactMatch: Temporary
+strictPattern: [31m/^\s*Temporary\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: autocomplete → employmentType → Full-Time
+
+=== Autocomplete Debug Start ===
+Input value: Full-Time
+Waiting for dropdown options...
+items: [ [32m'Full-Time'[39m ]
+cleaned: [ [32m'Full-Time'[39m ]
+exactMatch: Full-Time
+strictPattern: [31m/^\s*Full-Time\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: input → noOfVacancies → 11
+Action: checkbox → keepJobOpenForever → check
+Action: multiSelectCreate → skills → kotlin,java,management
+Action: editor → jobDescription → Automate recruiter workflows with Playwright.
+Action: editor → jobRequirement → 1+ year Playwright, good JS, API basics.
+Action: autocomplete → personaBenchmarkEmployee → Alpha X (alpha@x0pa.com)
+
+=== Autocomplete Debug Start ===
+Input value: Alpha X (alpha@x0pa.com)
+Waiting for dropdown options...
+items: [ [32m'Alpha X (alpha@x0pa.com)'[39m ]
+cleaned: [ [32m'Alpha X (alpha@x0pa.com)'[39m ]
+exactMatch: Alpha X (alpha@x0pa.com)
+strictPattern: [31m/^\s*Alpha X \(alpha@x0pa\.com\)\s*$/i[39m
+exactLocator count: [33m1[39m
+Clicking exact match option...
+=== Autocomplete Debug End (exact match) ===
+
+Action: upload → additionalAttachments → aditional atachments1.pdf,aditional atachments2.pdf
+Action: click → submitBtn → null
+Assert: text → jobCreatedSuccessfullyMessage
+Saving output → jobId via saveJobID
+Stored: btc1 → bsc2.jobId = 683809 for user with id 2
+Action: click → jobsNavBar → null
+Action: click → JobPostings → null
+Assert: text → JobPostingsHeading
+Action: clickPerticularJobTitle → JobTitle → 683809
+Total pages: 7
+Found Job ID 683809 on page 1, clicking...
+  ✓  1 [chromium] › tests\metaRunner.spec.js:69:9 › Metadata Driven Framework (Runtime Mode) › job creation and click on perticular jobid  (Id: btc1) (1.3m)
+
+========== [Allure Report Generation Started] ==========
+
+Loading RunJson from: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\server\runtime\user_2\run.json
+[INFO] Loaded runJson: {
+  testcaseCount: 1,
+  scenarioCount: 3,
+  pageCount: 3,
+  runMode: 'serial',
+  reportName: '07-01-2026_02-39-36_PM',
+  createdAt: '2026-01-07T09:09:36.232Z',
+  url: 'https://tronstag.x0pa.ai/',
+  email: 'murali@x0pa.com',
+  password: 'x0pa@123#',
+  userId: 2
+}
+[INFO] Resolved userId: 2
+[INFO] Resolved reportName: 07-01-2026_02-39-36_PM
+[INFO] Allure results directory: users/user_2/allure-results
+[INFO] Framework user directory: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2
+[INFO] Final Allure report output directory: C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2\allure-report\07-01-2026_02-39-36_PM
+[SUCCESS] Output directory ensured.
+[INFO] Allure CLI command path: "C:\Users\MuraliBandaru\AppData\Roaming\npm\allure.cmd"
+[INFO] Executing Allure command:
+        "C:\Users\MuraliBandaru\AppData\Roaming\npm\allure.cmd" generate "users/user_2/allure-results" --clean -o "C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2\allure-report\07-01-2026_02-39-36_PM"
+Report successfully generated to C:\Users\MuraliBandaru\Desktop\XOPA-automation-17\framework\users\user_2\allure-report\07-01-2026_02-39-36_PM
+
+[SUCCESS] Allure report generated successfully.
+
+========== [Allure Report Ready for User 2] ==========
+
+
+  1 passed (1.7m)
