@@ -169,18 +169,23 @@ export async function executeRunPipeline( testcaseIds, selectedBrowsers, runMode
 
       child.on("close", (code) => {
         logFile.end();
+        currentRun.finishedAt = new Date();
+        currentRun.status = code === 0 ? "idle" : "failed";
+        currentRun.process = null;
         console.log(`Playwright finished for user ${userId} with exit code ${code}`);
         resolve(code);
       });
 
       child.on("error", (err) => {
         logFile.end();
+        currentRun.finishedAt = new Date();
+        currentRun.status = "failed";
+        currentRun.process = null;
         console.error(`Playwright spawn error for user ${userId}:`, err);
         reject(err);
       });
+
     });
-
-
 
   } catch (err) {
     console.error(`Pipeline error for user with id ${userId}:`, err);
