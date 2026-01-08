@@ -1,10 +1,10 @@
-# Playwright image already has browsers + required Linux deps
-FROM mcr.microsoft.com/playwright:v1.54.0-jammy
+# Match Playwright version with framework package.json
+FROM mcr.microsoft.com/playwright:v1.56.1-jammy
 
 # App root inside container
 WORKDIR /app
 
-# Copy your whole repo into container
+# Copy entire repo
 COPY . .
 
 # Install server dependencies
@@ -15,11 +15,11 @@ RUN npm ci
 WORKDIR /app/framework
 RUN npm ci
 
-# Go back to server
+# Back to server
 WORKDIR /app/server
 
-# Railway sets PORT automatically; we'll expose a common port
+# Railway exposes PORT automatically
 EXPOSE 8080
 
-# Start your Express server
+# Start Express server
 CMD ["npm", "start"]
