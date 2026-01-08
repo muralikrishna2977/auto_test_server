@@ -104,6 +104,11 @@ export async function executeRunPipeline( testcaseIds, selectedBrowsers, runMode
       password: mainRes.rows[0].site_password_hash,
     };
 
+
+
+
+
+
     // STEP 4: WRITE RUNTIME FILES
     const runtimeDir = await writeRuntimeFiles({
       testData,
@@ -122,8 +127,7 @@ export async function executeRunPipeline( testcaseIds, selectedBrowsers, runMode
     
 
     // STEP 5: SPAWN PLAYWRIGHT
-    const FRAMEWORK_PATH =
-      process.env.FRAMEWORK_PATH || path.join(process.cwd(), "../framework");
+    const FRAMEWORK_PATH = process.env.FRAMEWORK_PATH || path.join(process.cwd(), "../framework");
 
     const frameworkUserDir = path.join(FRAMEWORK_PATH, "users", `user_${userId}`);
 
@@ -131,6 +135,8 @@ export async function executeRunPipeline( testcaseIds, selectedBrowsers, runMode
       fs.mkdirSync(path.join(frameworkUserDir, p), { recursive: true });
     });
 
+
+    // npx playwright test --project=chromium webkit firefox
     const browserArgs = selectedBrowsers.map((b) => `--project=${b}`);
     console.log(`Launching Playwright for user ${userId}:`, browserArgs.join(" "));
 
@@ -140,7 +146,7 @@ export async function executeRunPipeline( testcaseIds, selectedBrowsers, runMode
         shell: true,
         env: {
           ...process.env,
-          RUNTIME_DIR: runtimeDir,
+          RUNTIME_DIR: runtimeDir, 
 
           PLAYWRIGHT_TEST_RESULTS_DIR: path.join(frameworkUserDir, "test-results"),
           PLAYWRIGHT_HTML_REPORT: path.join(frameworkUserDir, "playwright-report"),
@@ -170,7 +176,7 @@ export async function executeRunPipeline( testcaseIds, selectedBrowsers, runMode
       child.on("close", (code) => {
         logFile.end();
         currentRun.finishedAt = new Date();
-        currentRun.status = code === 0 ? "idle" : "failed";
+        currentRun.status = code === 0 ? "completed" : "failed";
         currentRun.process = null;
         console.log(`Playwright finished for user ${userId} with exit code ${code}`);
         resolve(code);

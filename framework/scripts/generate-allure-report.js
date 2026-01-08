@@ -42,7 +42,7 @@ async function generateAllureReport() {
     return;
   }
 
-  // ✅ Cross-platform Allure command (works on Railway Linux too)
+  // Cross-platform Allure command (works on Railway Linux too)
   const allureGenerateCommand =
     `npx allure generate "${allureResultsDir}" --clean -o "${outputDir}"`;
 
@@ -65,3 +65,6 @@ async function generateAllureReport() {
 }
 
 export default generateAllureReport;
+
+
+
