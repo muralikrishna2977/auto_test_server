@@ -32,7 +32,7 @@ export default defineConfig({
   ],
 
   globalSetup: path.resolve("./scripts/global-setup.js"),
-  globalTeardown: path.resolve("./scripts/generate-allure-report.js"),
+  // globalTeardown: path.resolve("./scripts/generate-allure-report.js"),
 
   use: {
     viewport: { width: 1920, height: 1080 },
