@@ -75,7 +75,7 @@ test.describe("Metadata Driven Framework (Runtime Mode)", () => {
         injected0[item.id] = item.value;
       }
       // console.log("all data ", injected0);
-      try {
+      // try {
         for (const scId of tc.scenarios) {
           const scenarioObj = scenarioMap[scId];
           // console.log("scenario ", scenarioObj);
@@ -93,22 +93,22 @@ test.describe("Metadata Driven Framework (Runtime Mode)", () => {
           const injected2=resolveScenarioData(runJsonObj.userId, tc.testcase_id, injected1 || {});
           resolvedData[scId]={scenarioName: scenarioObj.name, data: injected2}; 
           await engine.runScenario(runJsonObj.userId, tc.testcase_id, scenarioObj, injected2);
-        }
-      } finally {
-        // attach resolved data + output
-        allure.attachment(
-          `Resolved Data for ${tc.testcase_id}`,
-          JSON.stringify(resolvedData, null, 2),
-          "application/json"
-        );
+                // }
+              // } finally {
+              //   // attach resolved data + output
+              //   allure.attachment(
+              //     `Resolved Data for ${tc.testcase_id}`,
+              //     JSON.stringify(resolvedData, null, 2),
+              //     "application/json"
+              //   );
 
-        allure.attachment(
-          `Output from ${tc.testcase_id}`,
-          JSON.stringify(dataStore.getTestcaseAll(runJsonObj.userId, tc.testcase_id) || {}, null, 2),
-          "application/json"
-        );
-        await page.waitForTimeout(200);
-      }
+              //   allure.attachment(
+              //     `Output from ${tc.testcase_id}`,
+              //     JSON.stringify(dataStore.getTestcaseAll(runJsonObj.userId, tc.testcase_id) || {}, null, 2),
+              //     "application/json"
+              //   );
+              //   await page.waitForTimeout(200);
+        }
     });
   }
 });
