@@ -119,48 +119,36 @@ export async function executeRunPipeline( testcaseIds, selectedBrowsers, runMode
 
     currentRun.runtimeDir = runtimeDir;
 
+    
+
     // STEP 5: SPAWN PLAYWRIGHT
-    const FRAMEWORK_PATH = path.join(process.cwd(), "../framework");
-    const frameworkUserDir = path.join( FRAMEWORK_PATH, "users", `user_${userId}` );
+    const FRAMEWORK_PATH =
+      process.env.FRAMEWORK_PATH || path.join(process.cwd(), "../framework");
 
-    const pathsToCreate = [
-      "test-results",
-      "playwright-report",
-      "allure-results",
-    ];
+    const frameworkUserDir = path.join(FRAMEWORK_PATH, "users", `user_${userId}`);
 
-    for (const p of pathsToCreate) {
-      fs.mkdirSync(
-        path.join(frameworkUserDir, p),
-        { recursive: true }
-      );
-    }
+    ["test-results", "playwright-report", "allure-results"].forEach((p) => {
+      fs.mkdirSync(path.join(frameworkUserDir, p), { recursive: true });
+    });
 
-    const browserArgs = selectedBrowsers.map(b => `--project=${b}`);
-    const view = viewMode === "headed" ? "--headed" : "";
-    console.log(`Launching Playwright for user ${userId}:`, browserArgs.join(" "), view);
-
+    const browserArgs = selectedBrowsers.map((b) => `--project=${b}`);
+    console.log(`Launching Playwright for user ${userId}:`, browserArgs.join(" "));
 
     return new Promise((resolve, reject) => {
-      const child = spawn(
-        "npx",
-        ["playwright", "test", ...browserArgs, view],
-        {
-          cwd: FRAMEWORK_PATH,
-          shell: true,
-          env: {
-            ...process.env,
+      const child = spawn("npx", ["playwright", "test", ...browserArgs], {
+        cwd: FRAMEWORK_PATH,
+        shell: true,
+        env: {
+          ...process.env,
+          RUNTIME_DIR: runtimeDir,
 
-            RUNTIME_DIR: runtimeDir,
+          PLAYWRIGHT_TEST_RESULTS_DIR: path.join(frameworkUserDir, "test-results"),
+          PLAYWRIGHT_HTML_REPORT: path.join(frameworkUserDir, "playwright-report"),
+          ALLURE_RESULTS_DIR: path.join(frameworkUserDir, "allure-results"),
 
-            PLAYWRIGHT_TEST_RESULTS_DIR: `users/user_${userId}/test-results`,
-            PLAYWRIGHT_HTML_REPORT: `users/user_${userId}/playwright-report`,
-            ALLURE_RESULTS_DIR: `users/user_${userId}/allure-results`,
-
-            USER_ID: userId,
-          },
-        } 
-      );
+          USER_ID: String(userId),
+        },
+      });
 
       currentRun.process = child;
 
@@ -169,23 +157,29 @@ export async function executeRunPipeline( testcaseIds, selectedBrowsers, runMode
         { flags: "a" }
       );
 
-      child.stdout.on("data", d => logFile.write(d));
-      child.stderr.on("data", d => logFile.write(d));
+      function logBoth(stream, data, type = "log") {
+        const text = data.toString();
+        stream.write(text);
+        if (type === "error") console.error(text.trim());
+        else console.log(text.trim());
+      }
 
-      child.on("close", code => {
-        currentRun.finishedAt = new Date();
-        currentRun.status = code === 0 ? "completed" : "failed";
-        currentRun.process = null;
+      child.stdout.on("data", (d) => logBoth(logFile, d, "log"));
+      child.stderr.on("data", (d) => logBoth(logFile, d, "error"));
+
+      child.on("close", (code) => {
+        logFile.end();
+        console.log(`Playwright finished for user ${userId} with exit code ${code}`);
         resolve(code);
       });
 
-      child.on("error", err => {
-        currentRun.finishedAt = new Date();
-        currentRun.status = "failed";
-        currentRun.process = null;
+      child.on("error", (err) => {
+        logFile.end();
+        console.error(`Playwright spawn error for user ${userId}:`, err);
         reject(err);
       });
     });
+
 
 
   } catch (err) {
@@ -197,4 +191,6 @@ export async function executeRunPipeline( testcaseIds, selectedBrowsers, runMode
 
     throw err;
   }
+
+
 }
