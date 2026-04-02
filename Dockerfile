@@ -1,5 +1,5 @@
 # Match Playwright version with your framework (@playwright/test)
-FROM mcr.microsoft.com/playwright:v1.56.1-jammy
+FROM mcr.microsoft.com/playwright:v1.58.2-jammy
 
 # App root inside container
 WORKDIR /app
