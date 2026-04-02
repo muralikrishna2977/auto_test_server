@@ -70,7 +70,8 @@ async function generateAllureReport() {
   // console.log("[INFO] Allure CLI command path:", allureCmd);
 
   // Build final command
-  const allureGenerateCommand = `${allureCmd} generate "${allureResultsDir}" --clean -o "${outputDir}"`;
+  // const allureGenerateCommand = `${allureCmd} generate "${allureResultsDir}" --clean -o "${outputDir}"`;
+  const allureGenerateCommand = `npx allure generate "${allureResultsDir}" --clean -o "${outputDir}"`;
 
   console.log("Executing Allure command:");
   console.log("       ", allureGenerateCommand);
