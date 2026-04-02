@@ -1,0 +1,88 @@
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(150) UNIQUE NOT NULL,
+  password_hash TEXT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE users_data (
+  id SERIAL PRIMARY KEY,
+  user_id INT NOT NULL UNIQUE,
+  site_url TEXT NOT NULL,
+  site_email_id TEXT NOT NULL,
+  site_password_hash TEXT NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE pages (
+  id SERIAL PRIMARY KEY,
+  user_id INT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  page_id TEXT NOT NULL UNIQUE,
+  page_name VARCHAR(255) NOT NULL,
+  page_json JSONB NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE (user_id, page_name)
+);
+
+CREATE TABLE scenarios (
+  id SERIAL PRIMARY KEY,
+  user_id INT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  scenario_id TEXT NOT NULL UNIQUE,
+  name VARCHAR(255) NOT NULL,
+  scenario_json JSONB NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE (user_id, name)
+);
+
+CREATE TABLE testcases (
+  id SERIAL PRIMARY KEY,
+  user_id INT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  testcase_id TEXT NOT NULL UNIQUE,
+  name VARCHAR(255) NOT NULL,
+  testcase_json JSONB NOT NULL,
+  is_shared BOOLEAN NOT NULL DEFAULT FALSE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE (user_id, name)
+);
+
+CREATE TABLE test_data (
+  id SERIAL PRIMARY KEY,
+  user_id INT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  testcase_id TEXT NOT NULL REFERENCES testcases(testcase_id) ON DELETE CASCADE,
+  rows JSONB NOT NULL DEFAULT '[]'::jsonb,
+  row_used INT NOT NULL DEFAULT 1,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE (user_id, testcase_id)
+);
+
+CREATE TABLE testcase_groups (
+  id SERIAL PRIMARY KEY,
+  user_id INT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  group_name VARCHAR(255) NOT NULL,
+  comment TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT unique_user_group UNIQUE (user_id, group_name)
+);
+
+
+CREATE TABLE testcase_group_items (
+  id SERIAL PRIMARY KEY,
+  group_id INT NOT NULL REFERENCES testcase_groups(id) ON DELETE CASCADE,
+  testcase_id TEXT NOT NULL REFERENCES testcases(testcase_id) ON DELETE CASCADE,
+  is_public BOOLEAN NOT NULL DEFAULT FALSE,
+  CONSTRAINT unique_group_testcase UNIQUE (group_id, testcase_id)
+);
+
+CREATE TABLE testruns (
+  id SERIAL PRIMARY KEY,
+  user_id INT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+  testCaseRunMode VARCHAR(255),
+  ranTestCaseIds JSONB,
+  group_id INT REFERENCES testcase_groups(id) ON DELETE CASCADE,
+  tag VARCHAR(255),
+  selectedBrowsers VARCHAR(255),
+  runMode VARCHAR(255),
+  reportName VARCHAR(255),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
